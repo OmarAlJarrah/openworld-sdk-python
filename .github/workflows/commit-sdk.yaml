@@ -13,6 +13,8 @@ jobs:
       - name: Commit
         working-directory: ./sdk
         run: |
+          echo "\n\n${GITHUB_WORKSPACE}"
+          echo "is the workspace \n\n"
           git config --global user.email "oss@expediagroup.com"
           git config --global user.name "Expedia Group Open Source"
           go install resenje.org/casbab/cmd/casbab@latest
