@@ -41,7 +41,7 @@ jobs:
         run: |
           echo ${{ github.event.inputs.name }}
           ./scripts/generate-sdk.sh -n "${{ inputs.name }}" -v "${{ inputs.version }}" -i "${{ inputs.fileAsBase64 }}"
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: sdk
           path: openworld/sdk/generator/package/dist
