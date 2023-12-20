@@ -26,3 +26,5 @@ updates:
       - ExpediaGroup/openworld-committers
     labels:
       - Dependabot
+    commit-message:
+      prefix: "update "
